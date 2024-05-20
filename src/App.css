@@ -46,3 +46,12 @@ p {
     transform: rotate(360deg);
   }
 }
+
+.App-footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 0.75rem;
+  color: #aaa;
+}

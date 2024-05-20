@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { version } from './version';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <h1>Rana Habitat LLC</h1>
         <p>Coming Soon</p>
       </header>
+      <footer className="App-footer">Version: {version}</footer>
     </div>
   );
 }
