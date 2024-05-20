@@ -12,6 +12,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,md}\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,7 +39,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.2.5"
   },
   "homepage": "https://kimko.github.io/rana-habitat-group"
 }

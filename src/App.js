@@ -5,18 +5,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img
+          src={logo}
+          className="App-logo"
+          alt="Logo depicting a turtle"
+          title="Turtle icon by Noun Project, from https://thenounproject.com/icon/turtle-846637/"
+        />
+        <h1>Rana Habitat LLC</h1>
+        <p>Coming Soon</p>
       </header>
     </div>
   );
