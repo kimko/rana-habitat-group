@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rana-habitat-group/static/css/main.a018efc2.css",
+    "main.js": "/rana-habitat-group/static/js/main.eb2540d2.js",
+    "static/js/453.7059805d.chunk.js": "/rana-habitat-group/static/js/453.7059805d.chunk.js",
+    "index.html": "/rana-habitat-group/index.html",
+    "main.a018efc2.css.map": "/rana-habitat-group/static/css/main.a018efc2.css.map",
+    "main.eb2540d2.js.map": "/rana-habitat-group/static/js/main.eb2540d2.js.map",
+    "453.7059805d.chunk.js.map": "/rana-habitat-group/static/js/453.7059805d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a018efc2.css",
+    "static/js/main.eb2540d2.js"
+  ]
+}
