@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/rana-habitat-group/static/css/main.a018efc2.css",
-    "main.js": "/rana-habitat-group/static/js/main.2f31ae30.js",
+    "main.css": "/rana-habitat-group/static/css/main.1424ef08.css",
+    "main.js": "/rana-habitat-group/static/js/main.190d0528.js",
     "static/js/453.7059805d.chunk.js": "/rana-habitat-group/static/js/453.7059805d.chunk.js",
     "static/media/logo.svg": "/rana-habitat-group/static/media/logo.b77c1486a5932425dbd1cd6c6d1966c4.svg",
     "index.html": "/rana-habitat-group/index.html",
-    "main.a018efc2.css.map": "/rana-habitat-group/static/css/main.a018efc2.css.map",
-    "main.2f31ae30.js.map": "/rana-habitat-group/static/js/main.2f31ae30.js.map",
+    "main.1424ef08.css.map": "/rana-habitat-group/static/css/main.1424ef08.css.map",
+    "main.190d0528.js.map": "/rana-habitat-group/static/js/main.190d0528.js.map",
     "453.7059805d.chunk.js.map": "/rana-habitat-group/static/js/453.7059805d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a018efc2.css",
-    "static/js/main.2f31ae30.js"
+    "static/css/main.1424ef08.css",
+    "static/js/main.190d0528.js"
   ]
 }
