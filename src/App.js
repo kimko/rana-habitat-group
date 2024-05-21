@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import { version } from './version';
 
+const LOADING = ['🌳', '🌲', '🌿', '🍃', '🍀', '🌱', '♻️', '🐢', '🐸'];
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,11 @@ function App() {
         />
         <h1>Rana Habitat LLC</h1>
         <p>Coming Soon</p>
+        <div className="loading-bar">
+          {LOADING.map((emoji, index) => (
+            <span key={index}>{emoji}</span>
+          ))}
+        </div>
       </header>
       <footer className="App-footer">Version: {version}</footer>
     </div>
