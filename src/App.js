@@ -9,8 +9,8 @@ function App() {
         <img
           src={logo}
           className="App-logo"
-          alt="Logo depicting a turtle"
-          title="Turtle icon by Noun Project, from https://thenounproject.com/icon/turtle-846637/"
+          alt="Logo frog"
+          title="Made by SVG Repo: https://www.svgrepo.com/svg/152726/frog"
         />
         <h1>Rana Habitat LLC</h1>
         <p>Coming Soon</p>
