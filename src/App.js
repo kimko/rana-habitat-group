@@ -1,8 +1,9 @@
+import React from 'react';
+import LoadingBar from './components/LoadingBar';
+import Education from './components/Education';
 import logo from './logo.svg';
 import './App.css';
 import { version } from './version';
-
-const LOADING = ['🌳', '🌲', '🌿', '🍃', '🍀', '🌱', '♻️', '🐢', '🐸'];
 
 function App() {
   return (
@@ -14,14 +15,18 @@ function App() {
           alt="Logo frog"
           title="Made by SVG Repo: https://www.svgrepo.com/svg/152726/frog"
         />
-        <h1>Rana Habitat LLC</h1>
+        <h1 class="text-4xl font-bold">Rana Habitat LLC</h1>
         <p>Coming Soon</p>
-        <div className="loading-bar">
-          {LOADING.map((emoji, index) => (
-            <span key={index}>{emoji}</span>
-          ))}
-        </div>
+        <LoadingBar />
       </header>
+
+      <main>
+        <Education />
+        {/* <Experience />
+      <Leadership />
+      <Publications />
+      <Certifications /> */}
+      </main>
       <footer className="App-footer">Version: {version}</footer>
     </div>
   );
