@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App flex flex-col min-h-screen">
       <NavigationBar />
-      <div className="hero min-h-screen bg-base-200 flex items-center justify-center">
+      <div id="hero" className="hero min-h-screen bg-base-200 flex items-center justify-center pt-16">
         <div className="hero-content text-center">
           <div className="max-w-md">
             <img

@@ -3,23 +3,55 @@ import React from 'react';
 
 const NavigationBar = () => {
   return (
-    <nav className="navbar bg-base-100 shadow-md">
-      <div className="container mx-auto flex justify-between">
-        <div className="text-xl font-bold">Rana Habitat LLC</div>
-        <div className="flex space-x-4">
-          <a href="#education" className="link link-hover">
+    <nav className="navbar bg-base-100 shadow-md fixed top-0 w-full z-50">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="text-2xl font-bold">
+          <a href="#hero">Rana Habitat LLC</a>
+        </div>
+        <div className="dropdown dropdown-end">
+          <label tabIndex="0" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </label>
+          <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            <li>
+              <a href="#education">Education</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#leadership">Leadership</a>
+            </li>
+            <li>
+              <a href="#publications">Publications</a>
+            </li>
+            <li>
+              <a href="#certifications">Certifications</a>
+            </li>
+          </ul>
+        </div>
+        <div className="hidden lg:flex space-x-4">
+          <a href="#education" className="btn btn-ghost btn-sm rounded-btn">
             Education
           </a>
-          <a href="#experience" className="link link-hover">
+          <a href="#experience" className="btn btn-ghost btn-sm rounded-btn">
             Experience
           </a>
-          <a href="#leadership" className="link link-hover">
+          <a href="#leadership" className="btn btn-ghost btn-sm rounded-btn">
             Leadership
           </a>
-          <a href="#publications" className="link link-hover">
+          <a href="#publications" className="btn btn-ghost btn-sm rounded-btn">
             Publications
           </a>
-          <a href="#certifications" className="link link-hover">
+          <a href="#certifications" className="btn btn-ghost btn-sm rounded-btn">
             Certifications
           </a>
         </div>
