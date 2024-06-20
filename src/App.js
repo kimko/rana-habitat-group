@@ -26,8 +26,16 @@ function App() {
             <h1 className="text-5xl font-bold mt-4">Rana Habitat LLC</h1>
             <p className="py-6 text-xl">Coming Soon</p>
             <LoadingBar />
-            <a href="#main-content" className="btn btn-primary mt-4">
-              Explore
+            <a href="#main-content" className="mt-8 block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-10 w-10 mx-auto animate-bounce"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              </svg>
             </a>
           </div>
         </div>
