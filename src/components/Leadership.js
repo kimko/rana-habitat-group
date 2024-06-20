@@ -1,12 +1,7 @@
 // components/Leadership.js
 import React from 'react';
-import MarkdownContent from './MarkdownContent';
+import Section from './Section';
 
-const Leadership = () => (
-  <section id="leadership" className="container mx-auto p-8">
-    <h2 className="text-3xl font-bold mb-4">Leadership</h2>
-    <MarkdownContent path="content/leadership/index.md" />
-  </section>
-);
+const Leadership = () => <Section title="Leadership" path="content/leadership/index.md" />;
 
 export default Leadership;

@@ -12,7 +12,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App flex flex-col min-h-screen">
+    <div className="App flex flex-col min-h-screen bg-base-200 ">
       <NavigationBar />
       <div id="hero" className="hero min-h-screen bg-base-200 flex items-center justify-center pt-16">
         <div className="hero-content text-center">
