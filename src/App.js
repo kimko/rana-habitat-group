@@ -7,26 +7,33 @@ import Publications from './components/Publications';
 import Certifications from './components/Certifications';
 import NavigationBar from './components/NavigationBar';
 import logo from './logo.svg';
-import './App.css';
 import { version } from './version';
+import './App.css';
 
 function App() {
   return (
     <div className="App flex flex-col min-h-screen">
       <NavigationBar />
-      <header className="bg-base-100 p-4 flex flex-col items-center">
-        <img
-          src={logo}
-          className="w-32 h-32"
-          alt="Logo frog"
-          title="Made by SVG Repo: https://www.svgrepo.com/svg/152726/frog"
-        />
-        <h1 className="text-4xl font-bold mt-2">Rana Habitat LLC</h1>
-        <p className="text-xl mt-2">Coming Soon</p>
-        <LoadingBar />
-      </header>
+      <div className="hero min-h-screen bg-base-200 flex items-center justify-center">
+        <div className="hero-content text-center">
+          <div className="max-w-md">
+            <img
+              src={logo}
+              className="w-32 h-32 mx-auto animate-spin-slow"
+              alt="Logo frog"
+              title="Made by SVG Repo: https://www.svgrepo.com/svg/152726/frog"
+            />
+            <h1 className="text-5xl font-bold mt-4">Rana Habitat LLC</h1>
+            <p className="py-6 text-xl">Coming Soon</p>
+            <LoadingBar />
+            <a href="#main-content" className="btn btn-primary mt-4">
+              Explore
+            </a>
+          </div>
+        </div>
+      </div>
 
-      <main className="flex-grow container mx-auto p-8">
+      <main id="main-content" className="flex-grow container mx-auto p-8">
         <section id="education" className="my-8">
           <Education />
         </section>
