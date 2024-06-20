@@ -1,6 +1,10 @@
 import React from 'react';
 import LoadingBar from './components/LoadingBar';
 import Education from './components/Education';
+import Experience from './components/Experience';
+import Leadership from './components/Leadership';
+import Publications from './components/Publications';
+import Certifications from './components/Certifications';
 import logo from './logo.svg';
 import './App.css';
 import { version } from './version';
@@ -22,10 +26,10 @@ function App() {
 
       <main>
         <Education />
-        {/* <Experience />
-      <Leadership />
-      <Publications />
-      <Certifications /> */}
+        <Experience />
+        <Leadership />
+        <Publications />
+        <Certifications />
       </main>
       <footer className="App-footer">Version: {version}</footer>
     </div>
