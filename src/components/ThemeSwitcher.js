@@ -33,6 +33,9 @@ const ThemeSwitcher = () => {
     'night',
     'coffee',
     'winter',
+    'dim',
+    'nord',
+    'sunset',
   ];
 
   const [selectedTheme, setSelectedTheme] = useState(defaultTheme);

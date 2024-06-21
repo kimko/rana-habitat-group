@@ -9,7 +9,7 @@ module.exports = {
     require('@tailwindcss/typography'),
   ],
 daisyui: {
-    themes: [
+themes: [
       "light",
       "dark",
       "cupcake",
@@ -38,7 +38,10 @@ daisyui: {
       "lemonade",
       "night",
       "coffee",
-      "winter"
+      "winter",
+      "dim",
+      "nord",
+      "sunset",
     ],
   },
 }
