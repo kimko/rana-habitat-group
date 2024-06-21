@@ -1,7 +1,9 @@
-// components/NavigationBar.js
 import React from 'react';
+import ThemeSwitcher from './ThemeSwitcher';
 
 const NavigationBar = () => {
+  const isDev = process.env.NODE_ENV === 'development';
+
   return (
     <nav className="navbar bg-base-100 shadow-md fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
@@ -54,6 +56,7 @@ const NavigationBar = () => {
           <a href="#trainings-certifications" className="btn btn-sm rounded-btn">
             Certifications
           </a>
+          {isDev && <ThemeSwitcher />}
         </div>
       </div>
     </nav>

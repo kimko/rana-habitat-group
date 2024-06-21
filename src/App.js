@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import LoadingBar from './components/LoadingBar';
 import Section from './components/Section';
 import NavigationBar from './components/NavigationBar';
@@ -6,9 +6,15 @@ import logo from './logo.svg';
 import { version } from './version';
 import './App.css';
 
+const defaultTheme = process.env.REACT_APP_DEFAULT_THEME;
+
 function App() {
+  useEffect(() => {
+    console.log('defaultTheme', defaultTheme);
+    document.documentElement.setAttribute('data-theme', defaultTheme);
+  }, []);
   return (
-    <div className="App flex flex-col min-h-screen" data-theme="garden">
+    <div className="App flex flex-col min-h-screen">
       <NavigationBar />
       <div id="hero" className="hero min-h-screen flex items-center justify-center pt-16">
         <div className="hero-content text-center">
