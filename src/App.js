@@ -39,10 +39,10 @@ function App() {
 
       <main id="main-content" className="flex-grow container mx-auto p-8">
         <Section title="Education" path="content/education/index.md" />
-        <Section title="Experience" path="content/experience/index.md" />
-        <Section title="Leadership" path="content/leadership/index.md" />
+        <Section title="Scientific Research and Restoration Experience" path="content/experience/index.md" />
+        <Section title="Leadership Experience" path="content/leadership/index.md" />
         <Section title="Publications" path="content/publications/index.md" />
-        <Section title="Certifications" path="content/certifications/index.md" />
+        <Section title="Trainings / Certifications" path="content/certifications/index.md" />
       </main>
 
       <footer className="p-4 text-center">

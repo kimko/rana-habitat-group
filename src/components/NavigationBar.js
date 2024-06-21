@@ -25,33 +25,33 @@ const NavigationBar = () => {
               <a href="#education">Education</a>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <a href="#scientific-research-and-restoration-experience">Experience</a>
             </li>
             <li>
-              <a href="#leadership">Leadership</a>
+              <a href="#leadership-experience">Leadership</a>
             </li>
             <li>
               <a href="#publications">Publications</a>
             </li>
             <li>
-              <a href="#certifications">Certifications</a>
+              <a href="#trainings-certifications">Certifications</a>
             </li>
           </ul>
         </div>
         <div className="hidden lg:flex space-x-4">
-          <a href="#education" className="btn btn-ghost btn-sm rounded-btn">
+          <a href="#education" className="btn btn-sm rounded-btn">
             Education
           </a>
-          <a href="#experience" className="btn btn-ghost btn-sm rounded-btn">
+          <a href="#scientific-research-and-restoration-experience" className="btn btn-accent btn-sm rounded-btn">
             Experience
           </a>
-          <a href="#leadership" className="btn btn-ghost btn-sm rounded-btn">
+          <a href="#leadership-experience" className="btn btn-sm rounded-btn">
             Leadership
           </a>
-          <a href="#publications" className="btn btn-ghost btn-sm rounded-btn">
+          <a href="#publications" className="btn btn-sm rounded-btn">
             Publications
           </a>
-          <a href="#certifications" className="btn btn-ghost btn-sm rounded-btn">
+          <a href="#trainings-certifications" className="btn btn-sm rounded-btn">
             Certifications
           </a>
         </div>
