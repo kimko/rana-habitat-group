@@ -10,7 +10,6 @@ const defaultTheme = process.env.REACT_APP_DEFAULT_THEME;
 
 function App() {
   useEffect(() => {
-    console.log('defaultTheme', defaultTheme);
     document.documentElement.setAttribute('data-theme', defaultTheme);
   }, []);
   return (
