@@ -19,7 +19,7 @@ function App() {
           <div className="max-w-md">
             <img
               src={logo}
-              className="w-32 h-32 mx-auto animate-spin-slow"
+              className="w-32 h-32 mx-auto"
               alt="Logo frog"
               title="Made by SVG Repo: https://www.svgrepo.com/svg/152726/frog"
             />

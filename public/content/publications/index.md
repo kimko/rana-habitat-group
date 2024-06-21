@@ -1,5 +1,3 @@
-# Publications
-
 1. Krige, R.N, Rivera, C, Guderyahn, L.B, Holzer, K. How beavers affect habitat availability for two native Oregon turtle species. Journal of Wildlife Management. In Press.
 2. Kuzmin, Y, Svitin R, McAllister, C.T, Guderyahn, LB, and Tkach, V.V. In Press. Are we still only scratching the surface? Descriptions and phylogenetic affinities of two new species of Rhabdias (Stiles and Hassall, 1905; Nematoda: Rhabdiasidae) from North American Frogs. Journal of Parasitology.
 3. Guderyahn, L.B. and Lagalbo, M. 2023. Chapter 5: Portland’s Conservation Organizations: Acknowledging Racial Inequity and Responding with Community-Informed Solutions. In Urban Biodiversity and Equity: Justice-Centered Conservation in Cities. M. Lambert & C. Schell (eds). Oxford Press.

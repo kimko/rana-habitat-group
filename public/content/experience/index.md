@@ -1,5 +1,3 @@
-# Scientific Research and Restoration Experience
-
 **Portland Parks and Recreation: Natural Resource Ecologist**
 *March 2015 - Present / Portland, OR*
 
