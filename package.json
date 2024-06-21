@@ -1,6 +1,6 @@
 {
   "name": "rana-habitat-group",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "dependencies": {
     "@tailwindcss/typography": "^0.5.13",
     "@testing-library/jest-dom": "^5.17.0",

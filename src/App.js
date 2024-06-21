@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import LoadingBar from './components/LoadingBar';
 import Section from './components/Section';
 import NavigationBar from './components/NavigationBar';
+import Footer from './components/Footer';
 import logo from './logo.svg';
-import { version } from './version';
 import './App.css';
 
 const defaultTheme = process.env.REACT_APP_DEFAULT_THEME;
@@ -51,9 +51,7 @@ function App() {
         <Section title="Trainings / Certifications" path="content/certifications/index.md" />
       </main>
 
-      <footer className="p-4 text-center">
-        <p>Version: {version}</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
