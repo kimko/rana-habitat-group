@@ -24,7 +24,7 @@ function App() {
               alt="Logo frog"
               title="Made by SVG Repo: https://www.svgrepo.com/svg/152726/frog"
             />
-            <h1 className="text-5xl font-bold mt-4">Rana Habitat LLC</h1>
+            <h1 className="text-5xl font-bold mt-4">Rana Habitat</h1>
             <p className="py-6 text-xl">Coming Soon</p>
             <LoadingBar />
             <a href="#main-content" className="mt-8 block">
