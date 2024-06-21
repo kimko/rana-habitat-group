@@ -12,6 +12,7 @@ module.exports = {
     themes: [
       "garden",
       "dark",
+      "forest",
     ],
   },
 }

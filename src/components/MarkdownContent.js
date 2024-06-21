@@ -20,7 +20,7 @@ const MarkdownContent = ({ path }) => {
   return (
     <div className="markdown-content">
       {loading ? (
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center h-32">
           <div className="loading loading-ring"></div>
         </div>
       ) : (
