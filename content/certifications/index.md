@@ -1,5 +1,3 @@
-# Trainings / Certifications
-
 - Wilderness First Responder, National Outdoor Leadership School (NOLS), Certification since 2019
 - Volunteer Medic and Wildland Firefighter, Breitenbush Hot Springs and greater Detroit-Indaha Community
 - Language Skills - I speak, read and understand Spanish at an intermediate level.

@@ -1,5 +1,3 @@
-# Education
-
 ## Portland State University: Portland, OR
 **PhD in Energy, Environment and Society**  
 *January 2020 – present; Expected Graduation June 2025*  

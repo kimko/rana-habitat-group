@@ -1,5 +1,3 @@
-# Leadership Experience
-
 **Portland Parks and Recreation: Interim City Nature East Supervisor**
 *March – October 2019 / Portland, OR*
 
