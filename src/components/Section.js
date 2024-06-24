@@ -3,13 +3,13 @@ import React from 'react';
 import MarkdownContent from './MarkdownContent';
 import Timeline from './Timeline';
 
-const Section = ({ title, path, className }) => {
+const Section = ({ title, path, className, useTimeline }) => {
   const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-  console.log('path :', path);
+
   return (
-    <section id={id} className={`container mx-auto p-10 flex flex-col justify-center `}>
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-left">{title}</h2>
-      {title === 'Education' ? (
+    <section id={id} className={`container mx-auto py-16 ${className}`}>
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 text-left">{title}</h2>
+      {useTimeline ? (
         <Timeline csvPath={path} />
       ) : (
         <div className="prose prose-sm sm:prose lg:prose-xl text-left">

@@ -42,12 +42,16 @@ function App() {
         </div>
       </div>
 
-      <main id="main-content" className="flex-grow container mx-auto p-8">
-        <Section title="Education" path="/content/education.csv" />
-        <Section title="Scientific Research and Restoration Experience" path="content/experience/index.md" />
-        <Section title="Leadership Experience" path="content/leadership/index.md" />
-        <Section title="Publications" path="content/publications/index.md" />
-        <Section title="Trainings / Certifications" path="content/certifications/index.md" />
+      <main id="main-content" className="flex-grow container mx-auto p-0">
+        <Section title="Education" path="/content/education.csv" className="section" useTimeline />
+        <Section
+          title="Scientific Research and Restoration Experience"
+          path="content/experience/index.md"
+          className="section"
+        />
+        <Section title="Leadership Experience" path="/content/leadership.csv" className="section" useTimeline />
+        <Section title="Publications" path="content/publications/index.md" className="section" />
+        <Section title="Trainings / Certifications" path="content/certifications/index.md" className="section" />
       </main>
 
       <Footer />

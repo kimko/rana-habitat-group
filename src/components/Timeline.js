@@ -1,6 +1,7 @@
 // src/components/Timeline.js
 import React, { useState, useEffect } from 'react';
 import { csv } from 'd3-fetch';
+import classNames from 'classnames';
 
 const Timeline = ({ csvPath }) => {
   const [timelineData, setTimelineData] = useState([]);
@@ -28,13 +29,13 @@ const Timeline = ({ csvPath }) => {
             className={`timeline-${index % 2 === 0 ? 'start' : 'end'} mb-10 ${index % 2 === 0 ? 'md:text-end' : ''}`}
           >
             <time className="font-mono italic">{entry.dates}</time>
-            <div className="text-lg font-black">{entry.school}</div>
-            <div className="text-lg font-bold">{entry.degree}</div>
-            {entry.thesis && (
-              <div>
-                - <strong>Thesis:</strong> {entry.thesis}
-              </div>
-            )}
+            <div className={classNames({ 'text-primary': entry.highlight === 'yes' }, 'text-lg font-black')}>
+              {entry.school}
+            </div>
+            <div className={classNames({ 'text-secondary': entry.highlight === 'yes' }, 'text-lg font-bold')}>
+              {entry.degree}
+            </div>
+            {entry.thesis && <div>{entry.thesis}</div>}
           </div>
           <hr />
         </li>
