@@ -43,7 +43,7 @@ function App() {
       </div>
 
       <main id="main-content" className="flex-grow container mx-auto p-8">
-        <Section title="Education" path="content/education/index.md" />
+        <Section title="Education" path="/content/education.csv" />
         <Section title="Scientific Research and Restoration Experience" path="content/experience/index.md" />
         <Section title="Leadership Experience" path="content/leadership/index.md" />
         <Section title="Publications" path="content/publications/index.md" />
