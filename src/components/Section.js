@@ -13,8 +13,10 @@ const Section = ({ title, path, className, useTimeline }) => {
       {useTimeline ? (
         <Timeline csvPath={path} />
       ) : (
-        <div className="prose prose-sm sm:prose lg:prose-xl text-left">
-          <MarkdownContent path={path} />
+        <div className="flex justify-center">
+          <div className="prose prose-sm sm:prose lg:prose-xl text-left">
+            <MarkdownContent path={path} />
+          </div>
         </div>
       )}
     </section>

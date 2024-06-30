@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
+import { FaLeaf, FaRecycle, FaPaw, FaCity, FaFrog } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
@@ -15,7 +16,7 @@ const HeroSection = () => {
         </div>
         <div className="lg:w-2/3 max-w-lg lg:ml-10">
           <p className="py-6 text-lg">
-            <span className="text-primary">Rana Habitat Group</span> is an environmental consultancy using wildlife
+            <span className="text-secondary">Rana Habitat Group</span> is an environmental consultancy using wildlife
             surveys and ecological knowledge to guide land management, wildlife connectivity planning, and habitat
             design projects.
           </p>
@@ -28,15 +29,27 @@ const HeroSection = () => {
           </p>
           <div className="mt-6">
             <h2 className="text-2xl font-semibold">We promote:</h2>
-            <ul className="list-disc list-inside mt-2 text-lg">
-              <li>Conservation of wild land and habitat connectivity</li>
-              <li>Restoration of degraded lands</li>
-              <li>Sustainability of critical wildlife species presence</li>
-              <li>Increasing native biodiversity within cities</li>
+            <ul className="list-none mt-2 text-lg space-y-2">
+              <li className="flex items-center">
+                <FaLeaf className="text-secondary mr-2" />
+                Conservation of wild land and habitat connectivity
+              </li>
+              <li className="flex items-center">
+                <FaRecycle className="text-secondary mr-2" />
+                Restoration of degraded lands
+              </li>
+              <li className="flex items-center">
+                <FaFrog className="text-secondary mr-2" />
+                Sustainability of critical wildlife species presence
+              </li>
+              <li className="flex items-center">
+                <FaCity className="text-secondary mr-2" />
+                Increasing native biodiversity within cities
+              </li>
             </ul>
           </div>
           <p className="py-6 text-lg">
-            <span className="text-primary">Rana Habitat Group</span> is a woman-owned business in Oregon State.
+            <span className="text-secondary">Rana Habitat Group</span> is a woman-owned business in Oregon State.
           </p>
           <a href="#main-content" className="mt-8 block">
             <svg
