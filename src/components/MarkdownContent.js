@@ -1,6 +1,7 @@
 // components/MarkdownContent.js
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { fetchMarkdownContent } from '../utils/fetchContent';
 
 const MarkdownContent = ({ path }) => {
@@ -18,13 +19,15 @@ const MarkdownContent = ({ path }) => {
   }, [path]);
 
   return (
-    <div className="markdown-content">
+    <div className="markdown-content text-left">
       {loading ? (
         <div className="flex justify-center items-center h-32">
           <div className="loading loading-ring"></div>
         </div>
       ) : (
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <ReactMarkdown className="prose" remarkPlugins={[remarkGfm]}>
+          {content}
+        </ReactMarkdown>
       )}
     </div>
   );

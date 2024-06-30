@@ -14,9 +14,7 @@ const Section = ({ title, path, className, useTimeline }) => {
         <Timeline csvPath={path} />
       ) : (
         <div className="flex justify-center">
-          <div className="prose prose-sm sm:prose lg:prose-xl text-left">
-            <MarkdownContent path={path} />
-          </div>
+          <MarkdownContent path={path} />
         </div>
       )}
     </section>

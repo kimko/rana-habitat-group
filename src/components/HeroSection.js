@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
-import { FaLeaf, FaRecycle, FaPaw, FaCity, FaFrog } from 'react-icons/fa';
+import { FaLeaf, FaRecycle, FaCity, FaFrog } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
