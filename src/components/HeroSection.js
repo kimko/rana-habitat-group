@@ -1,21 +1,39 @@
 import React from 'react';
-import LoadingBar from './LoadingBar';
 import logo from '../logo.svg';
 
 const HeroSection = () => {
   return (
-    <div id="hero" className="hero min-h-screen flex items-center justify-center pt-16">
-      <div className="hero-content text-center">
-        <div className="max-w-md">
-          <img
-            src={logo}
-            className="w-60 h-60 mx-auto"
-            alt="An illustration of a green frog's foot with four smooth, rounded toes on a transparent background."
-            title="Rana Habitat Group logo"
-          />
+    <div id="hero" className="hero min-h-screen bg-base-200">
+      <div className="hero-content flex-col lg:flex-row text-center lg:text-left">
+        <img
+          src={logo}
+          className="max-w-sm  "
+          alt="An illustration of a green frog's foot with four smooth, rounded toes on a transparent background."
+          title="Rana Habitat Group logo"
+        />
+        <div className="max-w-lg lg:ml-10">
           <h1 className="text-5xl font-bold mt-4">Rana Habitat Group</h1>
-          <p className="py-6 text-xl">Coming Soon</p>
-          <LoadingBar />
+          <p className="py-6 text-lg">
+            Rana Habitat Group is an environmental consultancy using wildlife surveys and ecological knowledge to guide
+            land management, wildlife connectivity planning, and habitat design projects.
+          </p>
+          <p className="py-6 text-lg">
+            Our studies inform project design and implementation for sustainable and ecologically-centered land
+            management and wildlife conservation projects that are intentional, resilient, and inspired.
+          </p>
+          <p className="py-6 text-lg">
+            We work with landowners, land managers, and project designers to craft ecologically sound projects.
+          </p>
+          <div className="mt-6">
+            <h2 className="text-2xl font-semibold">We promote:</h2>
+            <ul className="list-disc list-inside mt-2 text-lg">
+              <li>Conservation of wild land and habitat connectivity</li>
+              <li>Restoration of degraded lands</li>
+              <li>Sustainability of critical wildlife species presence</li>
+              <li>Increasing native biodiversity within cities</li>
+            </ul>
+          </div>
+          <p className="py-6 text-lg">Rana Habitat Group is a woman-owned business in Oregon State.</p>
           <a href="#main-content" className="mt-8 block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
