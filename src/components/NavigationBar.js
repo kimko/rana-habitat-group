@@ -1,6 +1,6 @@
 import React from 'react';
 import ThemeSwitcher from './ThemeSwitcher';
-import logo from '../logo.svg';
+import Logo from './Logo';
 
 const NavigationBar = ({ navLinks }) => {
   const isDev = process.env.NODE_ENV === 'development';
@@ -9,7 +9,11 @@ const NavigationBar = ({ navLinks }) => {
     <nav className="navbar bg-base-100 shadow-md fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="Rana Habitat Group Logo" className="h-8 w-8" />
+          <Logo
+            className="h-8 w-8"
+            alt="An illustration of a green frog's foot with four smooth, rounded toes on a transparent background."
+            title="Rana Habitat Group logo"
+          />
           <div className="text-2xl font-bold">
             <a href="#hero">Rana Habitat Group</a>
           </div>

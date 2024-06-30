@@ -1,12 +1,13 @@
 // components/Footer.js
 import React from 'react';
-import logo from '../logo.svg';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
     <footer className="footer items-center p-4 bg-neutral text-neutral-content flex flex-col md:flex-row md:justify-between">
       <aside className="flex items-center">
-        <img src={logo} width="36" height="36" alt="Logo frog" className="fill-current" />
+        {/* <img src={logo} width="36" height="36" alt="Logo frog" className="fill-current" /> */}
+        <Logo width="36" height="36" alt="Logo frog" className="fill-current" />
         <div className="ml-2 flex flex-col items-start leading-tight">
           <p className="m-0">Laura Guderyahn</p>
           <p className="m-0">Rana Habitat Group</p>
