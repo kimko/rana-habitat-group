@@ -25,7 +25,7 @@ function App() {
       <NavigationBar navLinks={navLinks} />
       <HeroSection />
 
-      <main id="main-content" className="flex-grow container mx-auto p-0">
+      <main id="main-content" className="flex-grow container mx-auto pl-4 pr-4">
         {/* <Section title="Education" path="/content/education.csv" className="section" useTimeline /> */}
         <Section title="Projects" path="/content/projects.csv" className="section" useTimeline />
         {/* <Section
