@@ -20,11 +20,11 @@ function App() {
           <div className="max-w-md">
             <img
               src={logo}
-              className="w-32 h-32 mx-auto"
-              alt="Logo frog"
-              title="Made by SVG Repo: https://www.svgrepo.com/svg/152726/frog"
+              className="w-60 h-60 mx-auto"
+              alt="An illustration of a green frog's foot with four smooth, rounded toes on a transparent background."
+              title="Rana Habitat Group logo"
             />
-            <h1 className="text-5xl font-bold mt-4">Rana Habitat</h1>
+            <h1 className="text-5xl font-bold mt-4">Rana Habitat Group</h1>
             <p className="py-6 text-xl">Coming Soon</p>
             <LoadingBar />
             <a href="#main-content" className="mt-8 block">

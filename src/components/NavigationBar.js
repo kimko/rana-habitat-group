@@ -1,5 +1,6 @@
 import React from 'react';
 import ThemeSwitcher from './ThemeSwitcher';
+import logo from '../logo.svg';
 
 const NavigationBar = () => {
   const isDev = process.env.NODE_ENV === 'development';
@@ -7,8 +8,11 @@ const NavigationBar = () => {
   return (
     <nav className="navbar bg-base-100 shadow-md fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold">
-          <a href="#hero">Rana Habitat</a>
+        <div className="hidden lg:flex">
+          <img src={logo} alt="Rana Habitat Group Logo" className="h-8 w-8" />
+          <div className="text-2xl font-bold">
+            <a href="#hero">Rana Habitat Group</a>
+          </div>
         </div>
         <div className="dropdown dropdown-end">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">

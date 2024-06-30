@@ -9,7 +9,7 @@ const Footer = () => {
         <img src={logo} width="36" height="36" alt="Logo frog" className="fill-current" />
         <div className="ml-2 flex flex-col items-start leading-tight">
           <p className="m-0">Laura Guderyahn</p>
-          <p className="m-0">Rana Habitat</p>
+          <p className="m-0">Rana Habitat Group</p>
         </div>
       </aside>
       <nav className="flex items-center gap-4 mt-4 md:mt-0">
