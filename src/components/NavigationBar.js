@@ -2,19 +2,19 @@ import React from 'react';
 import ThemeSwitcher from './ThemeSwitcher';
 import logo from '../logo.svg';
 
-const NavigationBar = () => {
+const NavigationBar = ({ navLinks }) => {
   const isDev = process.env.NODE_ENV === 'development';
 
   return (
     <nav className="navbar bg-base-100 shadow-md fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="hidden lg:flex">
+        <div className="flex items-center space-x-2">
           <img src={logo} alt="Rana Habitat Group Logo" className="h-8 w-8" />
           <div className="text-2xl font-bold">
             <a href="#hero">Rana Habitat Group</a>
           </div>
         </div>
-        <div className="dropdown dropdown-end">
+        <div className="dropdown dropdown-end lg:hidden">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -27,39 +27,19 @@ const NavigationBar = () => {
             </svg>
           </label>
           <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-            <li>
-              <a href="#education">Education</a>
-            </li>
-            <li>
-              <a href="#scientific-research-and-restoration-experience">Experience</a>
-            </li>
-            <li>
-              <a href="#leadership-experience">Leadership</a>
-            </li>
-            <li>
-              <a href="#publications">Publications</a>
-            </li>
-            <li>
-              <a href="#trainings-certifications">Certifications</a>
-            </li>
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="hidden lg:flex space-x-4">
-          <a href="#education" className="btn btn-sm rounded-btn">
-            Education
-          </a>
-          <a href="#scientific-research-and-restoration-experience" className="btn btn-accent btn-sm rounded-btn">
-            Experience
-          </a>
-          <a href="#leadership-experience" className="btn btn-sm rounded-btn">
-            Leadership
-          </a>
-          <a href="#publications" className="btn btn-sm rounded-btn">
-            Publications
-          </a>
-          <a href="#trainings-certifications" className="btn btn-sm rounded-btn">
-            Certifications
-          </a>
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} className="btn btn-sm btn-outline">
+              {link.label}
+            </a>
+          ))}
           {isDev && <ThemeSwitcher />}
         </div>
       </div>
