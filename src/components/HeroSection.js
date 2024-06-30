@@ -4,19 +4,20 @@ import Logo from './Logo';
 const HeroSection = () => {
   return (
     <div id="hero" className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row text-center lg:text-left w-full">
-        <div className="lg:w-1/3 flex justify-center lg:justify-start">
+      <div className="hero-content flex-col lg:flex-row text-center lg:text-left w-full prose prose-lg prose-headings:text-center lg:prose-headings:text-left">
+        <div className="lg:w-1/3 flex flex-col items-center">
           <Logo
             className="w-full lg:w-auto max-w-xs"
             alt="An illustration of a green frog's foot with four smooth, rounded toes on a transparent background."
             title="Rana Habitat Group logo"
           />
+          <h1 className="text-2xl font-bold mt-2 text-center">Rana Habitat Group, LLC</h1>
         </div>
         <div className="lg:w-2/3 max-w-lg lg:ml-10">
-          <h1 className="text-5xl font-bold mt-4">Rana Habitat Group</h1>
           <p className="py-6 text-lg">
-            Rana Habitat Group is an environmental consultancy using wildlife surveys and ecological knowledge to guide
-            land management, wildlife connectivity planning, and habitat design projects.
+            <span className="text-primary">Rana Habitat Group</span> is an environmental consultancy using wildlife
+            surveys and ecological knowledge to guide land management, wildlife connectivity planning, and habitat
+            design projects.
           </p>
           <p className="py-6 text-lg">
             Our studies inform project design and implementation for sustainable and ecologically-centered land
@@ -34,7 +35,9 @@ const HeroSection = () => {
               <li>Increasing native biodiversity within cities</li>
             </ul>
           </div>
-          <p className="py-6 text-lg">Rana Habitat Group is a woman-owned business in Oregon State.</p>
+          <p className="py-6 text-lg">
+            <span className="text-primary">Rana Habitat Group</span> is a woman-owned business in Oregon State.
+          </p>
           <a href="#main-content" className="mt-8 block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
