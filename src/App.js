@@ -1,18 +1,9 @@
 import React, { useEffect } from 'react';
 import Section from './components/Section';
-import NavigationBar from './components/NavigationBar';
-import Footer from './components/Footer';
-import HeroSection from './components/HeroSection';
+import MoreHero from './components/MoreHero';
+import ContactHero from './components/ContactHero';
 import './App.css';
-
-const navLinks = [
-  // { href: '#education', label: 'Education' },
-  { href: '#projects', label: 'Projects' },
-  // { href: '#scientific-research-and-restoration-experience', label: 'Experience' },
-  // { href: '#leadership-experience', label: 'Leadership' },
-  // { href: '#publications', label: 'Publications' },
-  { href: '#trainings-certifications', label: 'Certifications' },
-];
+import Hero from './components/Hero';
 
 const defaultTheme = process.env.REACT_APP_DEFAULT_THEME;
 
@@ -21,24 +12,28 @@ function App() {
     document.documentElement.setAttribute('data-theme', defaultTheme);
   }, []);
   return (
-    <div className="App flex flex-col min-h-screen">
-      <NavigationBar navLinks={navLinks} />
-      <HeroSection />
-
-      <main id="main-content" className="flex-grow container mx-auto pl-4 pr-4">
-        {/* <Section title="Education" path="/content/education.csv" className="section" useTimeline /> */}
-        <Section title="Projects" path="/content/projects.csv" className="section" useTimeline />
-        {/* <Section
-          title="Scientific Research and Restoration Experience"
-          path="content/experience/index.md"
-          className="section"
+    <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
+      {/* <div className="snap-start">
+      <Hero
+          title="Welcome to Our Site"
+          subtitle="Discover more about us"
+          bgColor="bg-blue-500"
+          textColor="text-white"
         />
-        <Section title="Leadership Experience" path="/content/leadership.csv" className="section" useTimeline />
-        <Section title="Publications" path="content/publications/index.md" className="section" /> */}
-        <Section title="Trainings / Certifications" path="content/certifications/index.md" className="section" />
-      </main>
+      </div> */}
+      <div className="snap-start">
+        <ContactHero />
+      </div>
 
-      <Footer />
+      <div className="snap-start">
+        <MoreHero />
+      </div>
+      <div className="snap-start">
+        <Section title="Projects" path="/content/projects.csv" className="section" useTimeline />
+      </div>
+      {/* <div className="snap-start">
+        <Section title="Trainings / Certifications" path="content/certifications/index.md" className="section" />
+      </div> */}
     </div>
   );
 }
