@@ -4,16 +4,16 @@ import Logo from './Logo';
 const ContactHero = () => {
   return (
     <header id="contact-hero" className="min-h-screen flex items-center justify-center bg-base-200">
-      <div className="hero-content text-center p-6 prose lg:prose-xl">
+      <div className="hero-content text-center px-4 py-2 md:p-6 prose-sm md:prose lg:prose-xl">
         <div className="max-w-md mx-auto">
           <Logo width="100" height="100" alt="Logo frog" className="mx-auto mb-4" />
-          <h1 className="mb-4 font-bold">Rana Habitat Group, LLC</h1>
-          <p className="py-2 lg:py-6 text-left">
+          <h1 className="mb-2 md:mb-4 font-bold">Rana Habitat Group, LLC</h1>
+          <p className="py-2 md:py-6 text-left">
             <span className="text-secondary">Rana Habitat Group</span> is an environmental consultancy using wildlife
             surveys and ecological knowledge to guide land management, wildlife connectivity planning, and habitat
             design projects.
           </p>
-          <h2>Contact Us</h2>
+          <h3>Contact Us</h3>
           <p>
             <strong>Laura Guderyahn</strong>
             <br />

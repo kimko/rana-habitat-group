@@ -5,7 +5,7 @@ const MoreHero = () => {
   return (
     <section id="more-hero" className="min-h-screen flex items-center justify-center bg-base-100">
       <div className="hero-content text-center p-6 flex flex-col items-center">
-        <div className="max-w-2xl mx-auto prose md:prose-xl">
+        <div className="max-w-2xl mx-auto prose-sm md:prose lg:prose-xl">
           <p className="mb-2 md:mb-4 text-left">
             Our studies inform project design and implementation for sustainable and ecologically-centered land
             management and wildlife conservation projects that are intentional, resilient, and inspired.
@@ -13,9 +13,9 @@ const MoreHero = () => {
           <p className="py-2 md:py-4 lg:py-6 text-left mb-2 md:mb-4">
             We work with landowners, land managers, and project designers to craft ecologically sound projects.
           </p>
-          <div className="mt-2">
-            <h3 className="mb-2 md:mb-4">We promote:</h3>
-            <ul className="list-none space-y-4 text-left">
+          <div className="md:mt-2">
+            <h3>We promote:</h3>
+            <ul className="list-none space-y-2 md:space-y-4 text-left">
               <li className="flex items-center">
                 <FaLeaf className="text-secondary mr-2" />
                 Conservation of wild land and habitat connectivity

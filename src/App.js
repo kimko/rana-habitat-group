@@ -3,7 +3,6 @@ import Section from './components/Section';
 import MoreHero from './components/MoreHero';
 import ContactHero from './components/ContactHero';
 import './App.css';
-import Hero from './components/Hero';
 
 const defaultTheme = process.env.REACT_APP_DEFAULT_THEME;
 
