@@ -7,10 +7,10 @@ const Section = ({ title, path, className, useTimeline }) => {
 
   return (
     <section id={id} className={`min-h-screen flex items-center justify-center bg-base-100 ${className}`}>
-      <div className="container px-2 md:px-4 prose-sm md:prose lg:prose-xl">
-        <h3>{title}</h3>
+      <div className="container pt-2 px-4 md:px-4 prose-sm md:prose lg:prose-xl">
+        <h2>{title}</h2>
         {useTimeline ? (
-          <div className="mt-8">
+          <div className="mt-4 md:mt-8">
             <Timeline csvPath={path} />
           </div>
         ) : (

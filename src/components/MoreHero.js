@@ -4,17 +4,17 @@ import { FaLeaf, FaRecycle, FaCity, FaFrog } from 'react-icons/fa';
 const MoreHero = () => {
   return (
     <section id="more-hero" className="min-h-screen flex items-center justify-center bg-base-100">
-      <div className="hero-content text-center p-6 flex flex-col items-center">
-        <div className="max-w-2xl mx-auto prose-sm md:prose lg:prose-xl">
-          <p className="mb-2 md:mb-4 text-left">
+      <div className="hero-content text-center md:p-6 flex flex-col items-center">
+        <div className="max-w-2xl mx-auto prose-sm md:prose lg:prose-xl animate-slide-in-left">
+          <p className="md:mb-4 text-left">
             Our studies inform project design and implementation for sustainable and ecologically-centered land
             management and wildlife conservation projects that are intentional, resilient, and inspired.
           </p>
-          <p className="py-2 md:py-4 lg:py-6 text-left mb-2 md:mb-4">
+          <p className="md:py-4 lg:py-6 text-left md:mb-4">
             We work with landowners, land managers, and project designers to craft ecologically sound projects.
           </p>
           <div className="md:mt-2">
-            <h3>We promote:</h3>
+            <h4>We promote:</h4>
             <ul className="list-none space-y-2 md:space-y-4 text-left">
               <li className="flex items-center">
                 <FaLeaf className="text-secondary mr-2" />

@@ -6,9 +6,9 @@ const ContactHero = () => {
     <header id="contact-hero" className="min-h-screen flex items-center justify-center bg-base-200">
       <div className="hero-content text-center px-4 py-2 md:p-6 prose-sm md:prose lg:prose-xl">
         <div className="max-w-md mx-auto">
-          <Logo width="100" height="100" alt="Logo frog" className="mx-auto mb-4" />
-          <h1 className="mb-2 md:mb-4 font-bold">Rana Habitat Group, LLC</h1>
-          <p className="py-2 md:py-6 text-left">
+          <Logo width="100" height="100" alt="Logo frog" className="mx-auto mb-4 animate-slide-in-left" />
+          <h2>Rana Habitat Group, LLC</h2>
+          <p className="py-2 md:py-6 text-wrap animate-slide-in-right">
             <span className="text-secondary">Rana Habitat Group</span> is an environmental consultancy using wildlife
             surveys and ecological knowledge to guide land management, wildlife connectivity planning, and habitat
             design projects.
@@ -19,7 +19,7 @@ const ContactHero = () => {
             <br />
             Rana Habitat Group
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center gap-4 ">
             <a href="mailto:lguderyahn@gmail.com" aria-label="Email">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ const ContactHero = () => {
           </div>
           <div className="mt-10 text-center">
             <div className="mb-2">
-              Scroll down or click&nbsp;
+              Scroll down or click to&nbsp;
               <a href="#more-hero" className="link link-secondary link-hover">
                 learn more
               </a>
