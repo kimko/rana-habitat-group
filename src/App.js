@@ -3,7 +3,7 @@ import Section from './components/Section';
 import MoreHero from './components/MoreHero';
 import ContactHero from './components/ContactHero';
 import './App.css';
-// import NavigationBar from './components/NavigationBar';
+import NavigationBar from './components/NavigationBar';
 
 const defaultTheme = process.env.REACT_APP_DEFAULT_THEME;
 
@@ -13,14 +13,13 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {/* <NavigationBar
+      <NavigationBar
         navLinks={[
           { href: '#hero', label: 'Home' },
           { href: '#projects', label: 'Projects' },
           { href: '#contact', label: 'Contact' },
         ]}
-
-      /> */}
+      />
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
         <div className="snap-start">
           <ContactHero />
