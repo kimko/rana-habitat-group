@@ -6,7 +6,7 @@ const Section = ({ title, path, className, useTimeline }) => {
   const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-hero';
 
   return (
-    <section id={id} className={`min-h-screen flex items-center justify-center bg-base-100 ${className}`}>
+    <section id={id} className={`min-h-screen flex items-center justify-center bg-base-200 ${className}`}>
       <div className="container pt-2 px-4 md:px-4 prose-sm md:prose lg:prose-xl">
         <h2>{title}</h2>
         {useTimeline ? (
