@@ -1,29 +1,5 @@
 import React from 'react';
 
-const CarouselItem = ({ src, alt, title, description, prevSlide, nextSlide }) => {
-  return (
-    <div className="carousel-item relative w-full">
-      <div className="card bg-base-100 image-full w-full shadow-xl">
-        <figure>
-          <img src={src} alt={alt} className="w-full" />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">{title}</h2>
-          <p>{description}</p>
-        </div>
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href={`#${prevSlide}`} className="btn btn-circle">
-            ❮
-          </a>
-          <a href={`#${nextSlide}`} className="btn btn-circle">
-            ❯
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 const LauraHero = () => {
   return (
     <div className="container mx-auto px-4 py-8">
