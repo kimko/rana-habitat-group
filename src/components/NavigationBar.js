@@ -2,7 +2,7 @@ import React from 'react';
 import ThemeSwitcher from './ThemeSwitcher';
 import Logo from './Logo';
 
-const NavigationBar = ({ navLinks }) => {
+const NavigationBar = ({ navLinks, selectedSection, onSectionChange }) => {
   const isDev = process.env.NODE_ENV === 'development';
 
   return (
@@ -33,14 +33,25 @@ const NavigationBar = ({ navLinks }) => {
           <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href}>{link.label}</a>
+                <a
+                  href={link.href}
+                  onClick={() => onSectionChange(link.href)}
+                  className={link.href === selectedSection ? 'btn btn-sm btn-active' : 'btn btn-sm'}
+                >
+                  {link.label}
+                </a>
               </li>
             ))}
           </ul>
         </div>
         <div className="hidden lg:flex space-x-4">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="btn btn-sm btn-outline">
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => onSectionChange(link.href)}
+              className={link.href === selectedSection ? 'btn btn-sm btn-active' : 'btn btn-sm'}
+            >
               {link.label}
             </a>
           ))}

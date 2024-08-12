@@ -11,6 +11,7 @@ const defaultTheme = process.env.REACT_APP_DEFAULT_THEME;
 
 function App() {
   const [isContentVisible, setIsContentVisible] = useState(false);
+  const [selectedSection, setSelectedSection] = useState('#home');
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', defaultTheme);
@@ -31,10 +32,14 @@ function App() {
     { href: '#contact', label: 'Contact' },
   ];
 
+  const handleSectionChange = (section) => {
+    setSelectedSection(section);
+  };
+
   return (
     <div className="App">
       {/* Navigation Bar */}
-      <NavigationBar navLinks={navLinks} />
+      <NavigationBar navLinks={navLinks} selectedSection={selectedSection} onSectionChange={handleSectionChange} />
 
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
         {!isContentVisible && (
