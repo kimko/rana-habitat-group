@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Section from './components/Section';
-import MoreHero from './components/MoreHero';
+import HomeHero from './components/HomeHero';
 import ContactHero from './components/ContactHero';
-import LauraHero from './components/LauraHero';
+import AboutHero from './components/AboutHero';
 import CommingSoonHero from './components/CommingSoonHero';
+import NavigationBar from './components/NavigationBar';
 import './App.css';
 
 const defaultTheme = process.env.REACT_APP_DEFAULT_THEME;
@@ -22,8 +23,19 @@ function App() {
     }
   }, []);
 
+  // Navigation links for the navbar
+  const navLinks = [
+    { href: '#home', label: 'Home' },
+    { href: '#about', label: 'About Us' },
+    { href: '#projects', label: 'Projects' },
+    { href: '#contact', label: 'Contact' },
+  ];
+
   return (
     <div className="App">
+      {/* Navigation Bar */}
+      <NavigationBar navLinks={navLinks} />
+
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
         {!isContentVisible && (
           <div className="snap-start">
@@ -32,20 +44,17 @@ function App() {
         )}
         {isContentVisible && (
           <>
-            <div className="snap-start">
-              <ContactHero />
+            <div className="snap-start" id="home">
+              <HomeHero />
             </div>
-            <div className="snap-start">
-              <MoreHero />
+            <div className="snap-start" id="about">
+              <AboutHero />
             </div>
-            <div className="snap-start">
-              <LauraHero />
-            </div>
-            <div className="snap-start">
+            <div className="snap-start" id="projects">
               <Section title="Projects" path="/content/projects.csv" className="section" useTimeline />
             </div>
-            <div className="snap-start">
-              <Section title="Trainings / Certifications" path="content/certifications/index.md" className="section" />
+            <div className="snap-start" id="contact">
+              <ContactHero />
             </div>
           </>
         )}

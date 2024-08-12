@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaLeaf, FaRecycle, FaCity, FaFrog } from 'react-icons/fa';
 
-const MoreHero = () => {
+const HomeHero = () => {
   return (
     <section id="more-hero" className="min-h-screen flex items-center justify-center bg-base-100">
       <div className="hero-content text-center md:p-6 flex flex-col items-center">
@@ -63,4 +63,4 @@ const MoreHero = () => {
   );
 };
 
-export default MoreHero;
+export default HomeHero;

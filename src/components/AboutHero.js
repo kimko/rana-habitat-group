@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LauraHero = () => {
+const AboutHero = () => {
   return (
     <header id="laura-hero" className="min-h-screen flex items-center justify-center bg-base-200">
       <div className="hero-content text-center px-4 py-2 md:p-6 prose-sm md:prose lg:prose-xl">
@@ -19,4 +19,4 @@ const LauraHero = () => {
   );
 };
 
-export default LauraHero;
+export default AboutHero;
