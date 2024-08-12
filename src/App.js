@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Section from './components/Section';
+import SectionHero from './components/SectionHero';
 import HomeHero from './components/HomeHero';
 import ContactHero from './components/ContactHero';
 import AboutHero from './components/AboutHero';
@@ -56,7 +56,7 @@ function App() {
               <AboutHero />
             </div>
             <div className="snap-start" id="projects">
-              <Section title="Projects" path="/content/projects.csv" className="section" useTimeline />
+              <SectionHero title="Projects" path="/content/projects.csv" className="section" useTimeline />
             </div>
             <div className="snap-start" id="contact">
               <ContactHero />

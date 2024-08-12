@@ -14,7 +14,7 @@ const NavigationBar = ({ navLinks, selectedSection, onSectionChange }) => {
             alt="An illustration of a green frog's foot with four smooth, rounded toes on a transparent background."
             title="Rana Habitat Group logo"
           />
-          <div className="text-2xl font-bold">
+          <div className="text-md lg:text-2xl font-bold">
             <a href="#hero">Rana Habitat Group</a>
           </div>
         </div>
