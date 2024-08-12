@@ -43,49 +43,6 @@ const LauraHero = () => {
         </p>
       </section>
 
-      {/* Carousel Section */}
-      <div className="carousel w-full">
-        <div id="slide1" className="carousel-item relative w-full">
-          <CarouselItem
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-            title="Shoes!"
-            description="If a dog chews shoes whose shoes does he choose?"
-            prevSlide="slide4"
-            nextSlide="slide2"
-          />
-        </div>
-        <div id="slide2" className="carousel-item relative w-full">
-          <CarouselItem
-            src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-            alt="Pizza"
-            title=""
-            description=""
-            prevSlide="slide1"
-            nextSlide="slide3"
-          />
-        </div>
-        <div id="slide3" className="carousel-item relative w-full">
-          <CarouselItem
-            src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-            alt="Pizza"
-            title=""
-            description=""
-            prevSlide="slide2"
-            nextSlide="slide4"
-          />
-        </div>
-        <div id="slide4" className="carousel-item relative w-full">
-          <CarouselItem
-            src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
-            alt="Pizza"
-            title=""
-            description=""
-            prevSlide="slide3"
-            nextSlide="slide1"
-          />
-        </div>
-      </div>
     </div>
   );
 };
