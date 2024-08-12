@@ -7,7 +7,7 @@ const ContactHero = () => {
   return (
     <header id="contact-hero" className="min-h-screen flex items-center justify-center bg-base-200">
       <div className="hero-content text-center px-4 py-2 md:p-6 prose-sm md:prose lg:prose-xl">
-        <div className="max-w-md mx-auto">
+        <div className="max-w-md lg:max-w-xl mx-auto">
           <Logo width="100" height="100" alt="Logo frog" className="mx-auto mb- animate-slide-in-left" />
           <h2>Rana Habitat Group, LLC</h2>
           <p className="py-2 md:py-6 text-wrap animate-slide-in-right">
