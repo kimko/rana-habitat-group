@@ -5,15 +5,19 @@ const CarouselItem = ({ src, alt, title, description, prevSlide, nextSlide }) =>
     <div className="carousel-item relative w-full">
       <div className="card bg-base-100 image-full w-full shadow-xl">
         <figure>
-          <img src={src} alt={alt} className="w-full"/>
+          <img src={src} alt={alt} className="w-full" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
           <p>{description}</p>
         </div>
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href={`#${prevSlide}`} className="btn btn-circle">❮</a>
-          <a href={`#${nextSlide}`} className="btn btn-circle">❯</a>
+          <a href={`#${prevSlide}`} className="btn btn-circle">
+            ❮
+          </a>
+          <a href={`#${nextSlide}`} className="btn btn-circle">
+            ❯
+          </a>
         </div>
       </div>
     </div>
@@ -27,12 +31,18 @@ const LauraHero = () => {
       <header className="text-center mb-8">
         <h1 className="text-3xl font-bold">Director Laura Guderyahn</h1>
       </header>
-      
+
       {/* Profile Section */}
       <section className="text-center mb-8">
-        <p>Laura is a wildlife ecologist who has been actively monitoring and researching the impacts of the built environment on habitat connectivity, native wildlife populations, and urban restoration projects for over 18 years. She recognizes that environmental issues are complex and require an adaptive mindset. Laura is currently working to complete her PhD in Environmental Science from Portland State University, focusing on native turtle conservation issues and filling high-priority research gaps.</p>
+        <p>
+          Laura is a wildlife ecologist who has been actively monitoring and researching the impacts of the built
+          environment on habitat connectivity, native wildlife populations, and urban restoration projects for over 18
+          years. She recognizes that environmental issues are complex and require an adaptive mindset. Laura is
+          currently working to complete her PhD in Environmental Science from Portland State University, focusing on
+          native turtle conservation issues and filling high-priority research gaps.
+        </p>
       </section>
-                      
+
       {/* Carousel Section */}
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
@@ -75,7 +85,7 @@ const LauraHero = () => {
             nextSlide="slide1"
           />
         </div>
-          </div>
+      </div>
     </div>
   );
 };

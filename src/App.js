@@ -3,6 +3,7 @@ import Section from './components/Section';
 import MoreHero from './components/MoreHero';
 import ContactHero from './components/ContactHero';
 import LauraHero from './components/LauraHero';
+import CommingSoonHero from './components/CommingSoonHero';
 import './App.css';
 // import NavigationBar from './components/NavigationBar';
 
@@ -23,6 +24,9 @@ function App() {
       /> */}
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
         <div className="snap-start">
+          <CommingSoonHero />
+        </div>
+        {/* <div className="snap-start">
           <ContactHero />
         </div>
 
@@ -34,7 +38,7 @@ function App() {
         </div>
         <div className="snap-start">
           <Section title="Projects" path="/content/projects.csv" className="section" useTimeline />
-        </div>
+        </div> */}
         {/* <div className="snap-start">
         <Section title="Trainings / Certifications" path="content/certifications/index.md" className="section" />
       </div> */}
