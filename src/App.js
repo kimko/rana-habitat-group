@@ -19,7 +19,7 @@ function App() {
     const params = new URLSearchParams(window.location.search);
     const showContent = params.get('showContent');
 
-    if (showContent) {
+    if (showContent === 'true') {
       setIsContentVisible(true);
     }
   }, []);

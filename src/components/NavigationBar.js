@@ -3,7 +3,10 @@ import ThemeSwitcher from './ThemeSwitcher';
 import Logo from './Logo';
 
 const NavigationBar = ({ navLinks, selectedSection, onSectionChange }) => {
-  const isDev = process.env.NODE_ENV === 'development';
+  // const isDev = process.env.NODE_ENV === 'development';
+
+  const params = new URLSearchParams(window.location.search);
+  const themeSelector = params.get('showThemeSelector');
 
   return (
     <nav className="navbar bg-base-100 shadow-md fixed top-0 w-full z-50">
@@ -55,7 +58,7 @@ const NavigationBar = ({ navLinks, selectedSection, onSectionChange }) => {
               {link.label}
             </a>
           ))}
-          {isDev && <ThemeSwitcher />}
+          {themeSelector === 'true' && <ThemeSwitcher />}
         </div>
       </div>
     </nav>
